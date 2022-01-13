@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aware.plugin.sentimental">
+
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+
+    <application>
+        <service
+            android:name="com.aware.plugin.sentimental.Plugin"
+            android:label="AWARE: Sentimental"
+            android:exported="true" />
+        <activity
+            android:name="com.aware.plugin.sentimental.Settings"
+            android:label="AWARE: Sentimental"
+            android:exported="true" />
+    </application>
+</manifest>
